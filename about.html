@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - 不知名テト老生</title>
+    <style>
+        /* 页面基础样式，与首页风格协调 */
+        body {
+            font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: #333;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        /* 导航栏样式 */
+        .page-nav {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .nav-button {
+            display: inline-block;
+            padding: 10px 25px;
+            margin: 0 10px;
+            background-color: #fff;
+            color: #3498db;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 2px solid #3498db;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+        /* 页面标题 */
+        .page-title {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .page-subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        /* 你原有的影集样式 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .media-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        .media-item img, .media-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .media-item:hover img,
+        .media-item:hover video {
+            transform: scale(1.03);
+        }
+        /* 说明文字 */
+        .page-intro {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面导航 -->
+    <nav class="page-nav">
+        <a href="index.html" class="nav-button">← 返回首页</a>
+        <a href="#" class="nav-button">#我的影集</a>
+    </nav>
+
+    <!-- 页面标题 -->
+    <header>
+        <h1 class="page-title">不知名テト老生的影集</h1>
+        <p class="page-subtitle">这里是存放游戏碎片、截图和瞬间的地方</p>
+    </header>
+
+    <!-- 页面介绍 -->
+    <div class="page-intro">
+        <p>作为一只<span style="font-weight:bold; color:#8e44ad;">“音游吃”</span>兼社恐，游戏世界是我的重要安全区。</p>
+        <p>这里会随手堆放一些《KARDS》的对局截图、《原神》的风景、<em>《1999》</em>的剧情时刻，或者音游里手忙脚乱的瞬间。</p>
+        <p><strong>（以下目前为示例图片和视频，你可以替换成自己的内容）</strong></p>
+    </div>
+
+    <!-- 影集主体 -->
+    <div class="gallery">
+        <!-- 图片示例1：可以使用在线占位图或你的图片链接 -->
+        <div class="media-item">
+            <img src="https://placehold.co/600x400/8e44ad/white?text=音游+Over+Flow" alt="某音游结算画面">
+        </div>
+        <!-- 图片示例2 -->
+        <div class="media-item">
+            <img src="https://placehold.co/600x400/3498db/white?text=KARDS+战术时刻" alt="KARDS对战关键时刻">
+        </div>
+        <!-- 视频示例：这里引用了一个公共测试视频，你可以替换src -->
+        <div class="media-item">
+            <video controls poster="https://placehold.co/600x340/2ecc71/white?text=视频封面：1999片段">
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                你的浏览器不支持视频标签。
+            </video>
+        </div>
+        <!-- 可以继续添加更多 -->
+        <div class="media-item">
+            <img src="https://placehold.co/600x400/e74c3c/white?text=原神+璃月港" alt="原神璃月港夜景">
+        </div>
+        <div class="media-item">
+            <img src="https://placehold.co/600x400/f39c12/white?text=练歌房" alt="1999游戏内场景">
+        </div>
+    </div>
+</body>
+</html>
