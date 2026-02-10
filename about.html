@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我 - 不知名テト老生</title>
+    <title>影集 | 不知名テト老生</title>
     <style>
         /* 页面基础样式，与首页风格协调 */
         body {
@@ -53,7 +53,7 @@
             margin-bottom: 40px;
             font-style: italic;
         }
-        /* 你原有的影集样式 */
+        /* 影集样式 */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -78,60 +78,50 @@
         .media-item:hover video {
             transform: scale(1.03);
         }
-        /* 说明文字 */
-        .page-intro {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
     <!-- 页面导航 -->
     <nav class="page-nav">
         <a href="index.html" class="nav-button">← 返回首页</a>
-        <a href="#" class="nav-button">#我的影集</a>
+        <a href="#" class="nav-button">#影集</a>
     </nav>
 
     <!-- 页面标题 -->
     <header>
-        <h1 class="page-title">不知名テト老生的影集</h1>
-        <p class="page-subtitle">这里是存放游戏碎片、截图和瞬间的地方</p>
+        <h1 class="page-title">影集</h1>
+        <p class="page-subtitle">图片与视频</p>
     </header>
-
-    <!-- 页面介绍 -->
-    <div class="page-intro">
-        <p>作为一只<span style="font-weight:bold; color:#8e44ad;">“音游吃”</span>兼社恐，游戏世界是我的重要安全区。</p>
-        <p>这里会随手堆放一些《KARDS》的对局截图、《原神》的风景、<em>《1999》</em>的剧情时刻，或者音游里手忙脚乱的瞬间。</p>
-        <p><strong>（以下目前为示例图片和视频，你可以替换成自己的内容）</strong></p>
-    </div>
 
     <!-- 影集主体 -->
     <div class="gallery">
         <!-- 图片示例1：可以使用在线占位图或你的图片链接 -->
         <div class="media-item">
-            <img src="https://placehold.co/600x400/8e44ad/white?text=音游+Over+Flow" alt="某音游结算画面">
+            <img src="https://placehold.co/600x400/8e44ad/white?text=图片+示例+1" alt="图片示例1">
         </div>
         <!-- 图片示例2 -->
         <div class="media-item">
-            <img src="https://placehold.co/600x400/3498db/white?text=KARDS+战术时刻" alt="KARDS对战关键时刻">
+            <img src="https://placehold.co/600x400/3498db/white?text=图片+示例+2" alt="图片示例2">
         </div>
         <!-- 视频示例：这里引用了一个公共测试视频，你可以替换src -->
         <div class="media-item">
-            <video controls poster="https://placehold.co/600x340/2ecc71/white?text=视频封面：1999片段">
+            <video controls poster="https://placehold.co/600x340/2ecc71/white?text=视频+封面">
                 <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
                 你的浏览器不支持视频标签。
             </video>
         </div>
         <!-- 可以继续添加更多 -->
         <div class="media-item">
-            <img src="https://placehold.co/600x400/e74c3c/white?text=原神+璃月港" alt="原神璃月港夜景">
+            <img src="https://placehold.co/600x400/e74c3c/white?text=图片+示例+3" alt="图片示例3">
         </div>
         <div class="media-item">
-            <img src="https://placehold.co/600x400/f39c12/white?text=练歌房" alt="1999游戏内场景">
+            <img src="https://placehold.co/600x400/f39c12/white?text=图片+示例+4" alt="图片示例4">
+        </div>
+        <!-- 以下是一个空白项，可以复制此结构来添加更多媒体 -->
+        <div class="media-item" style="background-color: #f9f9f9; display: flex; align-items: center; justify-content: center; border: 2px dashed #ddd;">
+            <div style="text-align: center; color: #aaa; padding: 30px 15px;">
+                添加更多...
+            </div>
         </div>
     </div>
 </body>
