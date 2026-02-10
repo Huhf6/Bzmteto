@@ -1,148 +1,146 @@
-```html
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>不知名テト老生的小站</title>
-    <style>
-        /* 基础样式：营造一个柔和、略拘谨的“社恐”氛围 */
-        body {
-            font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.7;
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+
+>头>头
+"'>"zh-CN"HTML lang="zh-CN"><<
+元<字符集=元<"UTF-8"meta字符集=>"UTF-8"< 字符集=元<"UTF-8"meta字符集=>"UTF-8"
+元名称<=“视口”内容=“宽度=设备宽度，初始比例=1.0”>元< 姓名="视口" 内容=>"宽度=设备宽度，初始比例=1.0"<=“视口”内容=“宽度=设备宽度，初始比例=1.0”>元< 姓名="视口" 内容=>"宽度=设备宽度，初始比例=1.0"
+>标题>不知名テト老生的小站<标题标题>标题</不知名テト老生的小站>标题</<标题标题>标题</不知名テト老生的小站>标题</
+>风格<<>风格<<>风格
+/* 基础样式：营造一个柔和、略拘谨的“社恐”氛围 *//* 基础样式：营造一个柔和、略拘谨的“社恐”氛围 */
+身体{正文 {
+“微软雅黑”字体系列：，'Segoe UI'，无衬线；字体系列：'微软亚黑'，'Segoe UI'，无衬线；
+背景色：#f8f9fa；背景色：#f8f9fa；
+颜色：#333；颜色: #333;
+线高：1.7；线高: 1.7;
+页边距：0；边缘: 0;
+填料：20px；填料：20px；
+最低高度：100vh；min-height:100VH；
+显示：柔性；显示: 弯曲;
+对齐-内容：居中；justify-content：中心；
+对齐项：居中；对齐项目: 中心;
+背景图像：线性梯度背景图像：线性梯度度，度，#f5f7fa0%，#e4edf510；背景图像%)；背景图像：linear-gradient线性梯度135deg，#f5f7fa0%，#e4edf5100%)；
         }
         
-        .intro-card {
-            background-color: rgba(255, 255, 255, 0.92);
-            border-radius: 16px;
-            padding: 40px 35px;
-            max-width: 600px;
-            width: 90%;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        /* 鼠标悬停时有轻微反馈，但不会太夸张 */
-        .intro-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+.Intro-card简介卡intro-card{
+；背景色背景色：RGBA255，255，255，0.92)；背景色：rgbaRGBA255，255，255，0.92)；
+边界半径：16px；border-radius:16px；
+填料：40px35px；padding:40px35px；
+最大宽度：600px；max-width:600px；
+宽度：90%；宽度: 90%;
+箱阴影：010px30px RGBA(0，0，0，0.08；长方体阴影；箱阴影：010px 30PXRGBA(0，0，0.08)；(0,0，0，0.08)；
+边框：1px实体rgba(255，255，255，0.6)；边框：1px实体rgba(255，255，255，0.6)；(255，255，255，0.6)；border:1px固体rgba(255，255，255，0.6)；
+文本对齐：居中；文本对齐：居中；：中心；
+过渡：变换0.3s轻松，影像0.3s轻松；过渡：transform0.3s easy，box-shadow0.3s easy；.3s轻松，影像0.3s轻松；过渡：变换0.3s轻松，影片0.3s轻松；
+位置：相对；位置：相对；：相对的；
+溢出：隐藏；溢出：隐藏；：隐藏的；
+        
+/* 鼠标悬停时有轻微反馈，但不会太夸张 */
+.Intro-card：悬停{
+变换：translateY(-5px)；
+箱阴影：015px35pxrgba(0，0，0，0.1)；
         }
         
-        /* 标题样式：不太张扬 */
-        .intro-title {
-            color: #2c3e50;
-            margin-bottom: 25px;
-            font-size: 2.2em;
-            font-weight: 600;
-            letter-spacing: 1px;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 10px;
+/* 标题样式：不太张扬 */
+.内部标题{
+颜色：#2c3e50；
+底边距：25px；
+font-size:2.2em；
+font-weight:600；
+字母间距：1px；
+位置：相对；
+显示：内联块；
+垫底：10px；
         }
-        /* 标题下的小装饰线 */
-        .intro-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 25%;
-            width: 50%;
-            height: 3px;
-            background: linear-gradient(to right, transparent, #3498db, transparent);
-            border-radius: 3px;
-        }
-        
-        /* 主要介绍文字 */
-        .intro-text {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            color: #555;
-            text-align: left;
-            padding: 0 15px;
+/* 标题下的小装饰线 */
+.内部标题：：在{之后
+内容：“”；
+位置：绝对；
+底部：0；
+左侧：25%；
+宽度：50%；
+高度：3px；
+背景：线性梯度(向右，透明，#3498db，透明)；
+边界半径：3px；
         }
         
-        /* 兴趣爱好标签区域 */
-        .hobbies {
-            margin-top: 35px;
-            padding-top: 25px;
-            border-top: 1px dashed #e0e0e0;
+/* 主要介绍文字 */
+.intro-text{
+font-size:1.2em；
+底边距：30px；
+颜色：#555；
+文本对齐：左；
+填充：0.15px；
         }
         
-        .hobby-tag {
-            display: inline-block;
-            background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
-            color: #333;
-            padding: 8px 18px;
-            margin: 8px;
-            border-radius: 50px;
-            font-size: 0.95em;
-            border: 1px solid rgba(120, 120, 120, 0.1);
-            transition: all 0.3s ease;
+/* 兴趣爱好标签区域 */
+.hobbies{
+margin-top:35px；
+顶部填料：25px；
+border-top:1px虚线#e0e0e0；
+.intro-text{
+        
+.hobby-tag{
+显示：内联块；
+背景：线性梯度(135度，#e3f2fd，#f3e5f5)；
+颜色：#333；
+填料：8px18px；
+margin:8px；
+边界半径：50px；
+字体大小：0.95em；
+边框：1px实体rgba(120，120，120，0.1)；
+>
         }
-        /* 标签悬停效果 */
-        .hobby-tag:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+/* 标签悬停效果 */
+.hobby-tag：悬停{
+字体大小：0.95em；
+盒阴影：05px12pxrgba(0，0，0，0.08)；
         }
         
-        /* 页脚签名 */
-        .footer-note {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #888;
-            font-style: italic;
-            letter-spacing: 0.5px;
+/* 页脚签名 */
+.footer-note{
+margin-top:40px；
+字体大小：0.9em；
+颜色：#888；
+字型样式：斜体；
+字母间距：0.5px；
         }
         
-        /* 响应式设计：适应手机 */
-        @media (max-width: 768px) {
-            .intro-card {
-                padding: 30px 25px;
+/* 响应式设计：适应手机 */
+@media(最大宽度：768px){
+.内部卡片{
+填料：30px25px；
             }
-            .intro-title {
-                font-size: 1.8em;
+.内部标题{
+字体大小：1.8em；
             }
-            .intro-text {
-                font-size: 1.1em;
-                padding: 0 5px;
+.intro-text{
+font-size:1.1em；
+填充：05px；
             }
         }
-    </style>
-</head>
-<body>
-    <div class="intro-card">
-        <h1 class="intro-title">不知名テト老生</h1>
+    </风格>
+</头>
+<身体>
+    <div 班级="intro-card">
+        <H1 班级="intro-title">不知名テト老生</H1>
         
-        <div class="intro-text">
-            <p>你好呀 (小心翼翼地挥手) 👋</p>
-            <p>我是一名普通的初三学生，正在知识的海洋里...努力划水。</p>
-            <p>标签的话，大概是一个<span style="font-weight:bold; color:#8e44ad;">“音游吃”</span>（？），在节奏和音符里寻找一点自己的小天地。</p>
-            <p>除了敲打屏幕和键盘，也会在别的世界逛逛：在《KARDS》里打打历史卡牌，去《原神》提瓦特大陆捡捡材料，或者回到《1999》的复古暴雨里解谜。</p>
-            <p><strong>最重要的一点：是纯纯的社恐分子。</strong> 线上话可能稍微多一点点，但现实里技能冷却时间超——级——长。很高兴能在这里遇到你！</p>
+        <div 班级="intro-text">
+            <p>你好呀(小心翼翼地挥手) 👋</p>
+            <p>我是一名普通的初三学生，正在知识的海洋里... 努力划水。</p>
+            <p>标签的话，大概是一个<跨度 风格="字体粗细：大胆的；颜色：#8e44ad；">“音游吃”</跨度>（？ ），在节奏和音符里寻找一点自己的小天地。</p>
+字体大小：0.95em；<p>除了敲打屏幕和键盘，也会在别的世界逛逛：在《纸牌》里打打历史卡牌，去《原神》提瓦特大陆捡捡材料，或者回到《1999》的复古暴雨里解谜。</p>
+            <p><强大的>最重要的一点：是纯纯的社恐分子。</强大的>线上话可能稍微多一点点，但现实里技能冷却时间超——级——长。 很高兴能在这里遇到你！</p>
         </div>
         
-        <div class="hobbies">
-            <span class="hobby-tag">#音游吃</span>
-            <span class="hobby-tag">#KARDS</span>
-            <span class="hobby-tag">#原神</span>
-            <span class="hobby-tag">#重返未来1999</span>
-            <span class="hobby-tag">#初三加油</span>
-            <span class="hobby-tag">#社恐自留地</span>
+        <div 班级="爱好">
+            <跨度 班级="爱好标签">#音游吃</跨度>
+.hobby-tag{<跨度 班级="爱好标签">#卡</跨度>
+            <跨度 班级="爱好标签">#原神</跨度>
+            <跨度 班级="爱好标签">#重返未来1999</跨度>
+字体大小：0.95em；<跨度 班级="爱好标签">#初三加油</跨度>
+            <跨度 班级="爱好标签">#社恐自留地</跨度>
         </div>
         
-        <p class="footer-note">...这个页面就是我的安全区边界了。</p>
+        <p 班级="页脚注释">... 这个页面就是我的安全区边界了。</p>
     </div>
-</body>
-</html>
-```
+</身体>
+</超文本标记语言>
